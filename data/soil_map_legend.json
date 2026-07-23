@@ -1,0 +1,21 @@
+{
+  "description": "Легенда почвенной карты: RGB → тип почвы. Отредактируйте цвета под ваш JPG (пипетка в диалоге распознавания).",
+  "entries": [
+    { "id": "chernozem", "label": "Чернозём", "texture": "loamy", "rgb": [180, 60, 50] },
+    { "id": "chernozem_light", "label": "Чернозём типичный", "texture": "loamy", "rgb": [210, 90, 70] },
+    { "id": "clay_loam", "label": "Суглинок", "texture": "clay_loam", "rgb": [240, 210, 60] },
+    { "id": "clay_loam_dark", "label": "Суглинок тяжёлый", "texture": "clay_loam", "rgb": [200, 170, 40] },
+    { "id": "loam", "label": "Супесь", "texture": "loamy", "rgb": [255, 240, 120] },
+    { "id": "sandy", "label": "Песчаная", "texture": "sandy", "rgb": [255, 200, 150] },
+    { "id": "clay", "label": "Глина", "texture": "clay", "rgb": [140, 100, 160] },
+    { "id": "peat", "label": "Торф", "texture": "loamy", "rgb": [80, 120, 70] },
+    { "id": "salt", "label": "Солонец", "texture": "sandy", "rgb": [200, 220, 255] }
+  ],
+  "borderColors": [
+    [255, 255, 255],
+    [0, 0, 0],
+    [40, 40, 40],
+    [220, 220, 220]
+  ],
+  "maxColorDistance": 85
+}

@@ -1,0 +1,26 @@
+# Локальные секреты / тяжёлые артефакты
+data/weather_config.json
+credentials.json
+rubin-gis-*.json
+*-credentials.json
+*.pem
+scripts/sokol_docs/
+scripts/*_out*.txt
+scripts/sokol_servis.html
+__pycache__/
+*.pyc
+.venv/
+
+# Тяжёлые мозаики — генерируются в GitHub Actions и заливаются по FTP
+# (локальные копии можно держать, в git не нужны)
+data/ndvi_mosaics/
+*.tif
+*.DAT
+*.MAP
+*.ID
+Maps vector/
+*.tif
+*.DAT
+*.MAP
+*.ID
+Maps vector/

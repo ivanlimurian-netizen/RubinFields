@@ -1,0 +1,2359 @@
+{
+  "generated_at": "2026-07-20T13:11:27",
+  "period": {
+    "label": "2026-06",
+    "start": "2026-06-01",
+    "end": "2026-06-30"
+  },
+  "collection": "COPERNICUS/S2_SR_HARMONIZED",
+  "cloud_mask": "QA60 bits 10,11",
+  "formula": "(B8 - B4) / (B8 + B4)",
+  "project": "rubin-gis",
+  "count": 179,
+  "mosaic": {
+    "enabled": true,
+    "dir": "data/ndvi_mosaics",
+    "count": 179,
+    "max_dim": 384,
+    "vis_min": 0.0,
+    "vis_max": 0.8,
+    "palette": [
+      "b71c1c",
+      "e53935",
+      "ff9800",
+      "fdd835",
+      "9ccc65",
+      "2e7d32"
+    ],
+    "opacity_hint": 0.6
+  },
+  "fields": [
+    {
+      "field_id": "58072",
+      "ndvi": 0.5407,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58072.png",
+      "bbox": {
+        "west": 79.118807,
+        "south": 53.790999,
+        "east": 79.151112,
+        "north": 53.812955
+      }
+    },
+    {
+      "field_id": "58080",
+      "ndvi": 0.5604,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58080.png",
+      "bbox": {
+        "west": 79.286551,
+        "south": 53.82562,
+        "east": 79.317511,
+        "north": 53.852745
+      }
+    },
+    {
+      "field_id": "58089",
+      "ndvi": 0.5054,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58089.png",
+      "bbox": {
+        "west": 79.006029,
+        "south": 53.871571,
+        "east": 79.03684,
+        "north": 53.89262
+      }
+    },
+    {
+      "field_id": "58096",
+      "ndvi": 0.623,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58096.png",
+      "bbox": {
+        "west": 79.266541,
+        "south": 53.779773,
+        "east": 79.29391,
+        "north": 53.808162
+      }
+    },
+    {
+      "field_id": "58105",
+      "ndvi": 0.6026,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58105.png",
+      "bbox": {
+        "west": 79.446998,
+        "south": 53.753155,
+        "east": 79.474875,
+        "north": 53.774404
+      }
+    },
+    {
+      "field_id": "58113",
+      "ndvi": 0.5693,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58113.png",
+      "bbox": {
+        "west": 79.328028,
+        "south": 53.832908,
+        "east": 79.346013,
+        "north": 53.851617
+      }
+    },
+    {
+      "field_id": "10244",
+      "ndvi": 0.5696,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/10244.png",
+      "bbox": {
+        "west": 78.954884,
+        "south": 53.778704,
+        "east": 79.00463,
+        "north": 53.799483
+      }
+    },
+    {
+      "field_id": "11142",
+      "ndvi": 0.6947,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/11142.png",
+      "bbox": {
+        "west": 79.312908,
+        "south": 53.736305,
+        "east": 79.334115,
+        "north": 53.747342
+      }
+    },
+    {
+      "field_id": "58104",
+      "ndvi": 0.673,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58104.png",
+      "bbox": {
+        "west": 79.452808,
+        "south": 53.749962,
+        "east": 79.467496,
+        "north": 53.757615
+      }
+    },
+    {
+      "field_id": "10235",
+      "ndvi": 0.6487,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/10235.png",
+      "bbox": {
+        "west": 79.284479,
+        "south": 53.742222,
+        "east": 79.300981,
+        "north": 53.755484
+      }
+    },
+    {
+      "field_id": "644378",
+      "ndvi": 0.4245,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644378.png",
+      "bbox": {
+        "west": 79.058662,
+        "south": 53.830428,
+        "east": 79.084963,
+        "north": 53.84573
+      }
+    },
+    {
+      "field_id": "644456",
+      "ndvi": 0.5992,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644456.png",
+      "bbox": {
+        "west": 79.330399,
+        "south": 53.809809,
+        "east": 79.348076,
+        "north": 53.824578
+      }
+    },
+    {
+      "field_id": "644455",
+      "ndvi": 0.6066,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644455.png",
+      "bbox": {
+        "west": 79.31929,
+        "south": 53.808199,
+        "east": 79.336011,
+        "north": 53.824047
+      }
+    },
+    {
+      "field_id": "644424",
+      "ndvi": 0.51,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644424.png",
+      "bbox": {
+        "west": 79.34642,
+        "south": 53.756724,
+        "east": 79.36176,
+        "north": 53.777174
+      }
+    },
+    {
+      "field_id": "644436",
+      "ndvi": 0.5414,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644436.png",
+      "bbox": {
+        "west": 79.34492,
+        "south": 53.784749,
+        "east": 79.360746,
+        "north": 53.800084
+      }
+    },
+    {
+      "field_id": "58086",
+      "ndvi": 0.5049,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58086.png",
+      "bbox": {
+        "west": 79.3108,
+        "south": 53.789614,
+        "east": 79.328454,
+        "north": 53.806971
+      }
+    },
+    {
+      "field_id": "644462",
+      "ndvi": 0.5912,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644462.png",
+      "bbox": {
+        "west": 79.24362,
+        "south": 53.780052,
+        "east": 79.259735,
+        "north": 53.79406
+      }
+    },
+    {
+      "field_id": "58109",
+      "ndvi": 0.6216,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58109.png",
+      "bbox": {
+        "west": 79.429311,
+        "south": 53.758638,
+        "east": 79.452885,
+        "north": 53.773683
+      }
+    },
+    {
+      "field_id": "10239",
+      "ndvi": 0.5779,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/10239.png",
+      "bbox": {
+        "west": 79.037369,
+        "south": 53.790703,
+        "east": 79.059922,
+        "north": 53.813137
+      }
+    },
+    {
+      "field_id": "10229",
+      "ndvi": 0.629,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/10229.png",
+      "bbox": {
+        "west": 79.240342,
+        "south": 53.81636,
+        "east": 79.252565,
+        "north": 53.826576
+      }
+    },
+    {
+      "field_id": "58075",
+      "ndvi": 0.5042,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58075.png",
+      "bbox": {
+        "west": 79.183944,
+        "south": 53.789872,
+        "east": 79.211748,
+        "north": 53.812889
+      }
+    },
+    {
+      "field_id": "11148",
+      "ndvi": 0.6309,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/11148.png",
+      "bbox": {
+        "west": 79.26072,
+        "south": 53.841127,
+        "east": 79.274471,
+        "north": 53.852549
+      }
+    },
+    {
+      "field_id": "11146",
+      "ndvi": 0.7135,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/11146.png",
+      "bbox": {
+        "west": 79.250363,
+        "south": 53.83406,
+        "east": 79.266456,
+        "north": 53.841794
+      }
+    },
+    {
+      "field_id": "11144",
+      "ndvi": 0.6449,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/11144.png",
+      "bbox": {
+        "west": 79.272429,
+        "south": 53.851716,
+        "east": 79.285915,
+        "north": 53.856722
+      }
+    },
+    {
+      "field_id": "10248",
+      "ndvi": 0.5287,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/10248.png",
+      "bbox": {
+        "west": 79.267923,
+        "south": 53.862759,
+        "east": 79.28863,
+        "north": 53.877415
+      }
+    },
+    {
+      "field_id": "10226",
+      "ndvi": 0.5561,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/10226.png",
+      "bbox": {
+        "west": 79.276112,
+        "south": 53.865184,
+        "east": 79.288319,
+        "north": 53.879357
+      }
+    },
+    {
+      "field_id": "58112",
+      "ndvi": 0.5309,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58112.png",
+      "bbox": {
+        "west": 79.143256,
+        "south": 53.806335,
+        "east": 79.183786,
+        "north": 53.830155
+      }
+    },
+    {
+      "field_id": "58090",
+      "ndvi": 0.5429,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58090.png",
+      "bbox": {
+        "west": 79.053402,
+        "south": 53.860696,
+        "east": 79.092398,
+        "north": 53.903154
+      }
+    },
+    {
+      "field_id": "58078",
+      "ndvi": 0.5855,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58078.png",
+      "bbox": {
+        "west": 79.118325,
+        "south": 53.800291,
+        "east": 79.161039,
+        "north": 53.819197
+      }
+    },
+    {
+      "field_id": "58111",
+      "ndvi": 0.5529,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58111.png",
+      "bbox": {
+        "west": 79.281443,
+        "south": 53.852768,
+        "east": 79.324694,
+        "north": 53.885347
+      }
+    },
+    {
+      "field_id": "58094",
+      "ndvi": 0.5078,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58094.png",
+      "bbox": {
+        "west": 79.333597,
+        "south": 53.822791,
+        "east": 79.372698,
+        "north": 53.834874
+      }
+    },
+    {
+      "field_id": "58083",
+      "ndvi": 0.5418,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58083.png",
+      "bbox": {
+        "west": 79.292201,
+        "south": 53.80617,
+        "east": 79.320399,
+        "north": 53.828051
+      }
+    },
+    {
+      "field_id": "58099",
+      "ndvi": 0.501,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58099.png",
+      "bbox": {
+        "west": 79.318348,
+        "south": 53.75607,
+        "east": 79.346936,
+        "north": 53.778378
+      }
+    },
+    {
+      "field_id": "644411",
+      "ndvi": 0.5281,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644411.png",
+      "bbox": {
+        "west": 79.180427,
+        "south": 53.889132,
+        "east": 79.189818,
+        "north": 53.897432
+      }
+    },
+    {
+      "field_id": "58087",
+      "ndvi": 0.4431,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58087.png",
+      "bbox": {
+        "west": 79.316942,
+        "south": 53.792901,
+        "east": 79.331288,
+        "north": 53.807789
+      }
+    },
+    {
+      "field_id": "58084",
+      "ndvi": 0.6213,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58084.png",
+      "bbox": {
+        "west": 79.279301,
+        "south": 53.821654,
+        "east": 79.29208,
+        "north": 53.830292
+      }
+    },
+    {
+      "field_id": "10230",
+      "ndvi": 0.6366,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/10230.png",
+      "bbox": {
+        "west": 79.251507,
+        "south": 53.816901,
+        "east": 79.27605,
+        "north": 53.827264
+      }
+    },
+    {
+      "field_id": "10245",
+      "ndvi": 0.6507,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/10245.png",
+      "bbox": {
+        "west": 79.249464,
+        "south": 53.823406,
+        "east": 79.269686,
+        "north": 53.83605
+      }
+    },
+    {
+      "field_id": "10246",
+      "ndvi": 0.6207,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/10246.png",
+      "bbox": {
+        "west": 79.244943,
+        "south": 53.840765,
+        "east": 79.266166,
+        "north": 53.864883
+      }
+    },
+    {
+      "field_id": "10224",
+      "ndvi": 0.6566,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/10224.png",
+      "bbox": {
+        "west": 79.256901,
+        "south": 53.852795,
+        "east": 79.290866,
+        "north": 53.874283
+      }
+    },
+    {
+      "field_id": "10225",
+      "ndvi": 0.6231,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/10225.png",
+      "bbox": {
+        "west": 79.235501,
+        "south": 53.869793,
+        "east": 79.279794,
+        "north": 53.896559
+      }
+    },
+    {
+      "field_id": "58114",
+      "ndvi": 0.5523,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58114.png",
+      "bbox": {
+        "west": 79.343602,
+        "south": 53.833137,
+        "east": 79.370694,
+        "north": 53.844509
+      }
+    },
+    {
+      "field_id": "58097",
+      "ndvi": 0.6471,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58097.png",
+      "bbox": {
+        "west": 79.255469,
+        "south": 53.791882,
+        "east": 79.284494,
+        "north": 53.817911
+      }
+    },
+    {
+      "field_id": "10241",
+      "ndvi": 0.473,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/10241.png",
+      "bbox": {
+        "west": 79.070022,
+        "south": 53.803161,
+        "east": 79.10293,
+        "north": 53.830659
+      }
+    },
+    {
+      "field_id": "10227",
+      "ndvi": 0.6411,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/10227.png",
+      "bbox": {
+        "west": 79.212232,
+        "south": 53.816954,
+        "east": 79.231332,
+        "north": 53.831615
+      }
+    },
+    {
+      "field_id": "10228",
+      "ndvi": 0.6259,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/10228.png",
+      "bbox": {
+        "west": 79.226851,
+        "south": 53.815828,
+        "east": 79.243161,
+        "north": 53.827143
+      }
+    },
+    {
+      "field_id": "10234",
+      "ndvi": 0.6583,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/10234.png",
+      "bbox": {
+        "west": 79.281138,
+        "south": 53.736288,
+        "east": 79.313858,
+        "north": 53.745705
+      }
+    },
+    {
+      "field_id": "10233",
+      "ndvi": 0.624,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/10233.png",
+      "bbox": {
+        "west": 79.25483,
+        "south": 53.736611,
+        "east": 79.283046,
+        "north": 53.741836
+      }
+    },
+    {
+      "field_id": "10238",
+      "ndvi": 0.5865,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/10238.png",
+      "bbox": {
+        "west": 79.037188,
+        "south": 53.81058,
+        "east": 79.061002,
+        "north": 53.817832
+      }
+    },
+    {
+      "field_id": "10236",
+      "ndvi": 0.6372,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/10236.png",
+      "bbox": {
+        "west": 79.299708,
+        "south": 53.740963,
+        "east": 79.316942,
+        "north": 53.751542
+      }
+    },
+    {
+      "field_id": "11147",
+      "ndvi": 0.685,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/11147.png",
+      "bbox": {
+        "west": 79.267305,
+        "south": 53.825127,
+        "east": 79.291968,
+        "north": 53.854379
+      }
+    },
+    {
+      "field_id": "644440",
+      "ndvi": 0.503,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644440.png",
+      "bbox": {
+        "west": 79.354607,
+        "south": 53.800144,
+        "east": 79.369349,
+        "north": 53.811685
+      }
+    },
+    {
+      "field_id": "10237",
+      "ndvi": 0.5452,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/10237.png",
+      "bbox": {
+        "west": 79.0343,
+        "south": 53.813441,
+        "east": 79.063323,
+        "north": 53.841693
+      }
+    },
+    {
+      "field_id": "10240",
+      "ndvi": 0.6038,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/10240.png",
+      "bbox": {
+        "west": 79.052794,
+        "south": 53.800889,
+        "east": 79.065385,
+        "north": 53.813878
+      }
+    },
+    {
+      "field_id": "58076",
+      "ndvi": 0.5387,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58076.png",
+      "bbox": {
+        "west": 79.172845,
+        "south": 53.810482,
+        "east": 79.199552,
+        "north": 53.8233
+      }
+    },
+    {
+      "field_id": "644402",
+      "ndvi": 0.6434,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644402.png",
+      "bbox": {
+        "west": 79.048912,
+        "south": 53.895894,
+        "east": 79.058255,
+        "north": 53.903104
+      }
+    },
+    {
+      "field_id": "58100",
+      "ndvi": 0.5281,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58100.png",
+      "bbox": {
+        "west": 79.284849,
+        "south": 53.76171,
+        "east": 79.298511,
+        "north": 53.770643
+      }
+    },
+    {
+      "field_id": "644387",
+      "ndvi": 0.6348,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644387.png",
+      "bbox": {
+        "west": 79.102174,
+        "south": 53.907136,
+        "east": 79.117588,
+        "north": 53.9237
+      }
+    },
+    {
+      "field_id": "10242",
+      "ndvi": 0.5337,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/10242.png",
+      "bbox": {
+        "west": 79.084363,
+        "south": 53.794581,
+        "east": 79.114985,
+        "north": 53.808652
+      }
+    },
+    {
+      "field_id": "11145",
+      "ndvi": 0.7174,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/11145.png",
+      "bbox": {
+        "west": 79.26287,
+        "south": 53.833281,
+        "east": 79.27317,
+        "north": 53.841901
+      }
+    },
+    {
+      "field_id": "58079",
+      "ndvi": 0.5742,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58079.png",
+      "bbox": {
+        "west": 79.289089,
+        "south": 53.824398,
+        "east": 79.297619,
+        "north": 53.829407
+      }
+    },
+    {
+      "field_id": "58110",
+      "ndvi": 0.6087,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58110.png",
+      "bbox": {
+        "west": 79.430669,
+        "south": 53.746816,
+        "east": 79.45094,
+        "north": 53.759345
+      }
+    },
+    {
+      "field_id": "644428",
+      "ndvi": 0.6739,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644428.png",
+      "bbox": {
+        "west": 79.346297,
+        "south": 53.736927,
+        "east": 79.382435,
+        "north": 53.751061
+      }
+    },
+    {
+      "field_id": "644432",
+      "ndvi": 0.6651,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644432.png",
+      "bbox": {
+        "west": 79.328934,
+        "south": 53.736859,
+        "east": 79.349695,
+        "north": 53.752363
+      }
+    },
+    {
+      "field_id": "644433",
+      "ndvi": 0.6372,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644433.png",
+      "bbox": {
+        "west": 79.321893,
+        "south": 53.736714,
+        "east": 79.340861,
+        "north": 53.753049
+      }
+    },
+    {
+      "field_id": "644385",
+      "ndvi": 0.6334,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644385.png",
+      "bbox": {
+        "west": 79.063057,
+        "south": 53.906219,
+        "east": 79.078702,
+        "north": 53.926837
+      }
+    },
+    {
+      "field_id": "644386",
+      "ndvi": 0.6043,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644386.png",
+      "bbox": {
+        "west": 79.015568,
+        "south": 53.906843,
+        "east": 79.039605,
+        "north": 53.916451
+      }
+    },
+    {
+      "field_id": "644409",
+      "ndvi": 0.7041,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644409.png",
+      "bbox": {
+        "west": 79.209067,
+        "south": 53.853401,
+        "east": 79.239684,
+        "north": 53.869591
+      }
+    },
+    {
+      "field_id": "644398",
+      "ndvi": 0.5455,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644398.png",
+      "bbox": {
+        "west": 78.975235,
+        "south": 53.890426,
+        "east": 78.991724,
+        "north": 53.900488
+      }
+    },
+    {
+      "field_id": "644406",
+      "ndvi": 0.5713,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644406.png",
+      "bbox": {
+        "west": 79.1148,
+        "south": 53.769724,
+        "east": 79.142881,
+        "north": 53.795014
+      }
+    },
+    {
+      "field_id": "644407",
+      "ndvi": 0.6437,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644407.png",
+      "bbox": {
+        "west": 79.167339,
+        "south": 53.864704,
+        "east": 79.209988,
+        "north": 53.881151
+      }
+    },
+    {
+      "field_id": "644414",
+      "ndvi": 0.5938,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644414.png",
+      "bbox": {
+        "west": 79.069363,
+        "south": 53.790799,
+        "east": 79.105033,
+        "north": 53.807167
+      }
+    },
+    {
+      "field_id": "644417",
+      "ndvi": 0.5018,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644417.png",
+      "bbox": {
+        "west": 79.109597,
+        "south": 53.761815,
+        "east": 79.137776,
+        "north": 53.777392
+      }
+    },
+    {
+      "field_id": "644418",
+      "ndvi": 0.5791,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644418.png",
+      "bbox": {
+        "west": 79.091165,
+        "south": 53.769616,
+        "east": 79.107356,
+        "north": 53.785671
+      }
+    },
+    {
+      "field_id": "644423",
+      "ndvi": 0.6137,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644423.png",
+      "bbox": {
+        "west": 79.353517,
+        "south": 53.802472,
+        "east": 79.360108,
+        "north": 53.807906
+      }
+    },
+    {
+      "field_id": "644421",
+      "ndvi": 0.482,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644421.png",
+      "bbox": {
+        "west": 79.384676,
+        "south": 53.749314,
+        "east": 79.388501,
+        "north": 53.753903
+      }
+    },
+    {
+      "field_id": "644425",
+      "ndvi": 0.5194,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644425.png",
+      "bbox": {
+        "west": 79.343324,
+        "south": 53.775129,
+        "east": 79.353343,
+        "north": 53.780457
+      }
+    },
+    {
+      "field_id": "644431",
+      "ndvi": 0.6023,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644431.png",
+      "bbox": {
+        "west": 79.348908,
+        "south": 53.749955,
+        "east": 79.360353,
+        "north": 53.753836
+      }
+    },
+    {
+      "field_id": "644437",
+      "ndvi": 0.6285,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644437.png",
+      "bbox": {
+        "west": 79.328588,
+        "south": 53.796503,
+        "east": 79.344797,
+        "north": 53.809016
+      }
+    },
+    {
+      "field_id": "644439",
+      "ndvi": 0.5478,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644439.png",
+      "bbox": {
+        "west": 79.355154,
+        "south": 53.785361,
+        "east": 79.371364,
+        "north": 53.802579
+      }
+    },
+    {
+      "field_id": "644447",
+      "ndvi": 0.5312,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644447.png",
+      "bbox": {
+        "west": 79.180568,
+        "south": 53.798988,
+        "east": 79.195363,
+        "north": 53.810516
+      }
+    },
+    {
+      "field_id": "644448",
+      "ndvi": 0.6648,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644448.png",
+      "bbox": {
+        "west": 79.224817,
+        "south": 53.783079,
+        "east": 79.241424,
+        "north": 53.79987
+      }
+    },
+    {
+      "field_id": "644449",
+      "ndvi": 0.7073,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644449.png",
+      "bbox": {
+        "west": 79.198603,
+        "south": 53.844136,
+        "east": 79.228489,
+        "north": 53.867419
+      }
+    },
+    {
+      "field_id": "644453",
+      "ndvi": 0.6596,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644453.png",
+      "bbox": {
+        "west": 79.188013,
+        "south": 53.841679,
+        "east": 79.213624,
+        "north": 53.866168
+      }
+    },
+    {
+      "field_id": "644464",
+      "ndvi": 0.6358,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644464.png",
+      "bbox": {
+        "west": 79.219519,
+        "south": 53.837149,
+        "east": 79.245867,
+        "north": 53.85882
+      }
+    },
+    {
+      "field_id": "644461",
+      "ndvi": 0.6145,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644461.png",
+      "bbox": {
+        "west": 79.248821,
+        "south": 53.779553,
+        "east": 79.272187,
+        "north": 53.797081
+      }
+    },
+    {
+      "field_id": "644466",
+      "ndvi": 0.5908,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644466.png",
+      "bbox": {
+        "west": 79.200606,
+        "south": 53.813099,
+        "east": 79.224845,
+        "north": 53.831362
+      }
+    },
+    {
+      "field_id": "644467",
+      "ndvi": 0.7047,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644467.png",
+      "bbox": {
+        "west": 79.1855,
+        "south": 53.84815,
+        "east": 79.199637,
+        "north": 53.865181
+      }
+    },
+    {
+      "field_id": "644468",
+      "ndvi": 0.6539,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644468.png",
+      "bbox": {
+        "west": 79.19288,
+        "south": 53.830587,
+        "east": 79.229267,
+        "north": 53.84693
+      }
+    },
+    {
+      "field_id": "644469",
+      "ndvi": 0.686,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644469.png",
+      "bbox": {
+        "west": 79.228172,
+        "south": 53.826569,
+        "east": 79.242247,
+        "north": 53.841193
+      }
+    },
+    {
+      "field_id": "644471",
+      "ndvi": 0.6927,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644471.png",
+      "bbox": {
+        "west": 79.185135,
+        "south": 53.832813,
+        "east": 79.202184,
+        "north": 53.849803
+      }
+    },
+    {
+      "field_id": "644474",
+      "ndvi": 0.6615,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644474.png",
+      "bbox": {
+        "west": 79.254437,
+        "south": 53.795173,
+        "east": 79.261058,
+        "north": 53.798076
+      }
+    },
+    {
+      "field_id": "644477",
+      "ndvi": 0.6969,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644477.png",
+      "bbox": {
+        "west": 79.222967,
+        "south": 53.858761,
+        "east": 79.244317,
+        "north": 53.870359
+      }
+    },
+    {
+      "field_id": "644478",
+      "ndvi": 0.6197,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644478.png",
+      "bbox": {
+        "west": 79.287849,
+        "south": 53.786321,
+        "east": 79.309079,
+        "north": 53.800664
+      }
+    },
+    {
+      "field_id": "644458",
+      "ndvi": 0.5791,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644458.png",
+      "bbox": {
+        "west": 79.294647,
+        "south": 53.802044,
+        "east": 79.301744,
+        "north": 53.811026
+      }
+    },
+    {
+      "field_id": "644382",
+      "ndvi": 0.4254,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644382.png",
+      "bbox": {
+        "west": 79.023362,
+        "south": 53.832359,
+        "east": 79.034522,
+        "north": 53.843808
+      }
+    },
+    {
+      "field_id": "644472",
+      "ndvi": 0.6876,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644472.png",
+      "bbox": {
+        "west": 79.223647,
+        "south": 53.828345,
+        "east": 79.228739,
+        "north": 53.831062
+      }
+    },
+    {
+      "field_id": "644412",
+      "ndvi": 0.6836,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644412.png",
+      "bbox": {
+        "west": 79.204068,
+        "south": 53.86743,
+        "east": 79.231908,
+        "north": 53.881127
+      }
+    },
+    {
+      "field_id": "644388",
+      "ndvi": 0.6417,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644388.png",
+      "bbox": {
+        "west": 79.077933,
+        "south": 53.906262,
+        "east": 79.101104,
+        "north": 53.913991
+      }
+    },
+    {
+      "field_id": "58108",
+      "ndvi": 0.6311,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58108.png",
+      "bbox": {
+        "west": 79.464965,
+        "south": 53.753001,
+        "east": 79.479586,
+        "north": 53.76165
+      }
+    },
+    {
+      "field_id": "10247",
+      "ndvi": 0.6966,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/10247.png",
+      "bbox": {
+        "west": 79.28222,
+        "south": 53.746039,
+        "east": 79.289065,
+        "north": 53.749713
+      }
+    },
+    {
+      "field_id": "644376",
+      "ndvi": 0.5997,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644376.png",
+      "bbox": {
+        "west": 79.011082,
+        "south": 53.788386,
+        "east": 79.030359,
+        "north": 53.81316
+      }
+    },
+    {
+      "field_id": "644391",
+      "ndvi": 0.5046,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644391.png",
+      "bbox": {
+        "west": 79.004758,
+        "south": 53.871372,
+        "east": 79.031958,
+        "north": 53.88623
+      }
+    },
+    {
+      "field_id": "644434",
+      "ndvi": 0.6242,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644434.png",
+      "bbox": {
+        "west": 79.336728,
+        "south": 53.798962,
+        "east": 79.349266,
+        "north": 53.809607
+      }
+    },
+    {
+      "field_id": "644401",
+      "ndvi": 0.6212,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644401.png",
+      "bbox": {
+        "west": 79.041264,
+        "south": 53.89783,
+        "east": 79.051684,
+        "north": 53.904419
+      }
+    },
+    {
+      "field_id": "58077",
+      "ndvi": 0.5209,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58077.png",
+      "bbox": {
+        "west": 79.151485,
+        "south": 53.793225,
+        "east": 79.170617,
+        "north": 53.807006
+      }
+    },
+    {
+      "field_id": "644375",
+      "ndvi": 0.5121,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644375.png",
+      "bbox": {
+        "west": 78.951761,
+        "south": 53.87833,
+        "east": 78.97359,
+        "north": 53.888764
+      }
+    },
+    {
+      "field_id": "644395",
+      "ndvi": 0.536,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644395.png",
+      "bbox": {
+        "west": 78.950543,
+        "south": 53.866013,
+        "east": 78.970972,
+        "north": 53.879024
+      }
+    },
+    {
+      "field_id": "644397",
+      "ndvi": 0.5207,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644397.png",
+      "bbox": {
+        "west": 78.998835,
+        "south": 53.889039,
+        "east": 79.006429,
+        "north": 53.896957
+      }
+    },
+    {
+      "field_id": "644476",
+      "ndvi": 0.5979,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644476.png",
+      "bbox": {
+        "west": 79.321873,
+        "south": 53.776151,
+        "east": 79.362207,
+        "north": 53.796484
+      }
+    },
+    {
+      "field_id": "10243",
+      "ndvi": 0.5807,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/10243.png",
+      "bbox": {
+        "west": 79.036056,
+        "south": 53.786992,
+        "east": 79.060677,
+        "north": 53.794747
+      }
+    },
+    {
+      "field_id": "58093",
+      "ndvi": 0.5366,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58093.png",
+      "bbox": {
+        "west": 79.060161,
+        "south": 53.844154,
+        "east": 79.089185,
+        "north": 53.863133
+      }
+    },
+    {
+      "field_id": "58095",
+      "ndvi": 0.5869,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58095.png",
+      "bbox": {
+        "west": 79.346359,
+        "south": 53.81101,
+        "east": 79.364042,
+        "north": 53.824386
+      }
+    },
+    {
+      "field_id": "644371",
+      "ndvi": 0.5563,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644371.png",
+      "bbox": {
+        "west": 79.100465,
+        "south": 53.817666,
+        "east": 79.111773,
+        "north": 53.823557
+      }
+    },
+    {
+      "field_id": "58070",
+      "ndvi": 0.566,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58070.png",
+      "bbox": {
+        "west": 79.158458,
+        "south": 53.774161,
+        "east": 79.173389,
+        "north": 53.795946
+      }
+    },
+    {
+      "field_id": "58069",
+      "ndvi": 0.522,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58069.png",
+      "bbox": {
+        "west": 79.178366,
+        "south": 53.776211,
+        "east": 79.217068,
+        "north": 53.789731
+      }
+    },
+    {
+      "field_id": "10231",
+      "ndvi": 0.5841,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/10231.png",
+      "bbox": {
+        "west": 79.002165,
+        "south": 53.780427,
+        "east": 79.013796,
+        "north": 53.787216
+      }
+    },
+    {
+      "field_id": "58071",
+      "ndvi": 0.4997,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58071.png",
+      "bbox": {
+        "west": 79.154045,
+        "south": 53.774015,
+        "east": 79.164785,
+        "north": 53.791615
+      }
+    },
+    {
+      "field_id": "58073",
+      "ndvi": 0.5351,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58073.png",
+      "bbox": {
+        "west": 79.146396,
+        "south": 53.774027,
+        "east": 79.159339,
+        "north": 53.799865
+      }
+    },
+    {
+      "field_id": "644404",
+      "ndvi": 0.6813,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644404.png",
+      "bbox": {
+        "west": 79.104793,
+        "south": 53.78431,
+        "east": 79.113243,
+        "north": 53.791078
+      }
+    },
+    {
+      "field_id": "644396",
+      "ndvi": 0.5576,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644396.png",
+      "bbox": {
+        "west": 78.962733,
+        "south": 53.88757,
+        "east": 78.974308,
+        "north": 53.896437
+      }
+    },
+    {
+      "field_id": "644399",
+      "ndvi": 0.5741,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644399.png",
+      "bbox": {
+        "west": 78.959451,
+        "south": 53.901298,
+        "east": 78.974208,
+        "north": 53.908887
+      }
+    },
+    {
+      "field_id": "644394",
+      "ndvi": 0.569,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644394.png",
+      "bbox": {
+        "west": 78.9138,
+        "south": 53.874303,
+        "east": 78.935837,
+        "north": 53.883009
+      }
+    },
+    {
+      "field_id": "644393",
+      "ndvi": 0.4461,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644393.png",
+      "bbox": {
+        "west": 78.92831,
+        "south": 53.864826,
+        "east": 78.945096,
+        "north": 53.877678
+      }
+    },
+    {
+      "field_id": "58091",
+      "ndvi": 0.5208,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58091.png",
+      "bbox": {
+        "west": 79.0915,
+        "south": 53.822335,
+        "east": 79.113611,
+        "north": 53.840199
+      }
+    },
+    {
+      "field_id": "58081",
+      "ndvi": 0.6058,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58081.png",
+      "bbox": {
+        "west": 79.30358,
+        "south": 53.8399,
+        "east": 79.325931,
+        "north": 53.852475
+      }
+    },
+    {
+      "field_id": "58098",
+      "ndvi": 0.5925,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58098.png",
+      "bbox": {
+        "west": 79.278353,
+        "south": 53.79443,
+        "east": 79.300638,
+        "north": 53.817834
+      }
+    },
+    {
+      "field_id": "644427",
+      "ndvi": 0.5551,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644427.png",
+      "bbox": {
+        "west": 79.349769,
+        "south": 53.783702,
+        "east": 79.368083,
+        "north": 53.801675
+      }
+    },
+    {
+      "field_id": "644450",
+      "ndvi": 0.6531,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644450.png",
+      "bbox": {
+        "west": 79.289664,
+        "south": 53.775114,
+        "east": 79.305831,
+        "north": 53.786739
+      }
+    },
+    {
+      "field_id": "644459",
+      "ndvi": 0.67,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644459.png",
+      "bbox": {
+        "west": 79.314209,
+        "south": 53.772882,
+        "east": 79.335087,
+        "north": 53.789697
+      }
+    },
+    {
+      "field_id": "644422",
+      "ndvi": 0.6583,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644422.png",
+      "bbox": {
+        "west": 79.375364,
+        "south": 53.743749,
+        "east": 79.384103,
+        "north": 53.75004
+      }
+    },
+    {
+      "field_id": "644429",
+      "ndvi": 0.6325,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644429.png",
+      "bbox": {
+        "west": 79.379279,
+        "south": 53.738212,
+        "east": 79.399301,
+        "north": 53.747366
+      }
+    },
+    {
+      "field_id": "11143",
+      "ndvi": 0.7041,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/11143.png",
+      "bbox": {
+        "west": 79.316537,
+        "south": 53.744835,
+        "east": 79.321452,
+        "north": 53.754132
+      }
+    },
+    {
+      "field_id": "644390",
+      "ndvi": 0.6445,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644390.png",
+      "bbox": {
+        "west": 79.077216,
+        "south": 53.919358,
+        "east": 79.083248,
+        "north": 53.925102
+      }
+    },
+    {
+      "field_id": "644403",
+      "ndvi": 0.5703,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644403.png",
+      "bbox": {
+        "west": 79.092779,
+        "south": 53.890561,
+        "east": 79.106142,
+        "north": 53.898245
+      }
+    },
+    {
+      "field_id": "644380",
+      "ndvi": 0.5928,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644380.png",
+      "bbox": {
+        "west": 79.023114,
+        "south": 53.781987,
+        "east": 79.035096,
+        "north": 53.785968
+      }
+    },
+    {
+      "field_id": "644438",
+      "ndvi": 0.5097,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644438.png",
+      "bbox": {
+        "west": 79.362529,
+        "south": 53.805209,
+        "east": 79.384198,
+        "north": 53.816908
+      }
+    },
+    {
+      "field_id": "644384",
+      "ndvi": 0.6321,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644384.png",
+      "bbox": {
+        "west": 79.077123,
+        "south": 53.907942,
+        "east": 79.086689,
+        "north": 53.920135
+      }
+    },
+    {
+      "field_id": "644420",
+      "ndvi": 0.5888,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644420.png",
+      "bbox": {
+        "west": 79.369535,
+        "south": 53.747622,
+        "east": 79.387885,
+        "north": 53.758958
+      }
+    },
+    {
+      "field_id": "644389",
+      "ndvi": 0.6324,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644389.png",
+      "bbox": {
+        "west": 79.082526,
+        "south": 53.912635,
+        "east": 79.097928,
+        "north": 53.924109
+      }
+    },
+    {
+      "field_id": "644408",
+      "ndvi": 0.475,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644408.png",
+      "bbox": {
+        "west": 79.137287,
+        "south": 53.759534,
+        "east": 79.146272,
+        "north": 53.774741
+      }
+    },
+    {
+      "field_id": "644451",
+      "ndvi": 0.7247,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644451.png",
+      "bbox": {
+        "west": 79.312761,
+        "south": 53.78488,
+        "east": 79.315134,
+        "north": 53.789436
+      }
+    },
+    {
+      "field_id": "644441",
+      "ndvi": 0.6426,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644441.png",
+      "bbox": {
+        "west": 79.342704,
+        "south": 53.800414,
+        "east": 79.354736,
+        "north": 53.810311
+      }
+    },
+    {
+      "field_id": "644413",
+      "ndvi": 0.4949,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644413.png",
+      "bbox": {
+        "west": 79.076064,
+        "south": 53.77834,
+        "east": 79.0925,
+        "north": 53.789585
+      }
+    },
+    {
+      "field_id": "644373",
+      "ndvi": 0.4343,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644373.png",
+      "bbox": {
+        "west": 79.038226,
+        "south": 53.843476,
+        "east": 79.058891,
+        "north": 53.857462
+      }
+    },
+    {
+      "field_id": "58074",
+      "ndvi": 0.5216,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58074.png",
+      "bbox": {
+        "west": 79.141838,
+        "south": 53.774367,
+        "east": 79.148582,
+        "north": 53.798249
+      }
+    },
+    {
+      "field_id": "644381",
+      "ndvi": 0.6242,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644381.png",
+      "bbox": {
+        "west": 79.024172,
+        "south": 53.822427,
+        "east": 79.031561,
+        "north": 53.824607
+      }
+    },
+    {
+      "field_id": "644460",
+      "ndvi": 0.4575,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644460.png",
+      "bbox": {
+        "west": 79.276189,
+        "south": 53.771175,
+        "east": 79.305704,
+        "north": 53.783817
+      }
+    },
+    {
+      "field_id": "644392",
+      "ndvi": 0.4951,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644392.png",
+      "bbox": {
+        "west": 78.938076,
+        "south": 53.865043,
+        "east": 78.94723,
+        "north": 53.87142
+      }
+    },
+    {
+      "field_id": "644416",
+      "ndvi": 0.4983,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644416.png",
+      "bbox": {
+        "west": 79.087778,
+        "south": 53.765959,
+        "east": 79.102661,
+        "north": 53.777491
+      }
+    },
+    {
+      "field_id": "644415",
+      "ndvi": 0.6173,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644415.png",
+      "bbox": {
+        "west": 79.108493,
+        "south": 53.794324,
+        "east": 79.120033,
+        "north": 53.80053
+      }
+    },
+    {
+      "field_id": "644383",
+      "ndvi": 0.6011,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644383.png",
+      "bbox": {
+        "west": 79.089938,
+        "south": 53.821369,
+        "east": 79.103829,
+        "north": 53.828082
+      }
+    },
+    {
+      "field_id": "644377",
+      "ndvi": 0.6029,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644377.png",
+      "bbox": {
+        "west": 79.016926,
+        "south": 53.786244,
+        "east": 79.032814,
+        "north": 53.813112
+      }
+    },
+    {
+      "field_id": "58088",
+      "ndvi": 0.4759,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58088.png",
+      "bbox": {
+        "west": 79.323576,
+        "south": 53.794667,
+        "east": 79.335572,
+        "north": 53.808304
+      }
+    },
+    {
+      "field_id": "644372",
+      "ndvi": 0.5869,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644372.png",
+      "bbox": {
+        "west": 79.01918,
+        "south": 53.811657,
+        "east": 79.032177,
+        "north": 53.823593
+      }
+    },
+    {
+      "field_id": "644379",
+      "ndvi": 0.5156,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644379.png",
+      "bbox": {
+        "west": 79.048155,
+        "south": 53.850353,
+        "east": 79.056844,
+        "north": 53.860447
+      }
+    },
+    {
+      "field_id": "644470",
+      "ndvi": 0.589,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644470.png",
+      "bbox": {
+        "west": 79.241563,
+        "south": 53.842998,
+        "east": 79.246841,
+        "north": 53.853262
+      }
+    },
+    {
+      "field_id": "644444",
+      "ndvi": 0.462,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644444.png",
+      "bbox": {
+        "west": 79.384086,
+        "south": 53.746162,
+        "east": 79.393844,
+        "north": 53.750813
+      }
+    },
+    {
+      "field_id": "10232",
+      "ndvi": 0.6058,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/10232.png",
+      "bbox": {
+        "west": 79.01469,
+        "south": 53.781277,
+        "east": 79.021243,
+        "north": 53.785237
+      }
+    },
+    {
+      "field_id": "644374",
+      "ndvi": 0.5013,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644374.png",
+      "bbox": {
+        "west": 79.04316,
+        "south": 53.8602,
+        "east": 79.055892,
+        "north": 53.873012
+      }
+    },
+    {
+      "field_id": "644465",
+      "ndvi": 0.658,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644465.png",
+      "bbox": {
+        "west": 79.30539,
+        "south": 53.773009,
+        "east": 79.323327,
+        "north": 53.784009
+      }
+    },
+    {
+      "field_id": "644475",
+      "ndvi": 0.5392,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644475.png",
+      "bbox": {
+        "west": 79.091949,
+        "south": 53.864712,
+        "east": 79.119113,
+        "north": 53.880642
+      }
+    },
+    {
+      "field_id": "644430",
+      "ndvi": 0.6486,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644430.png",
+      "bbox": {
+        "west": 79.338568,
+        "south": 53.736914,
+        "east": 79.35735,
+        "north": 53.752843
+      }
+    },
+    {
+      "field_id": "644443",
+      "ndvi": 0.6928,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644443.png",
+      "bbox": {
+        "west": 79.358595,
+        "south": 53.746283,
+        "east": 79.375062,
+        "north": 53.756898
+      }
+    },
+    {
+      "field_id": "644400",
+      "ndvi": 0.6702,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644400.png",
+      "bbox": {
+        "west": 79.041118,
+        "south": 53.904291,
+        "east": 79.050955,
+        "north": 53.908414
+      }
+    },
+    {
+      "field_id": "644426",
+      "ndvi": 0.5002,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644426.png",
+      "bbox": {
+        "west": 79.358677,
+        "south": 53.755951,
+        "east": 79.369386,
+        "north": 53.763427
+      }
+    },
+    {
+      "field_id": "58101",
+      "ndvi": 0.517,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58101.png",
+      "bbox": {
+        "west": 79.32258,
+        "south": 53.752217,
+        "east": 79.358462,
+        "north": 53.758069
+      }
+    },
+    {
+      "field_id": "58106",
+      "ndvi": 0.5362,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58106.png",
+      "bbox": {
+        "west": 79.304915,
+        "south": 53.758749,
+        "east": 79.314134,
+        "north": 53.765301
+      }
+    },
+    {
+      "field_id": "644457",
+      "ndvi": 0.6502,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644457.png",
+      "bbox": {
+        "west": 79.216066,
+        "south": 53.779302,
+        "east": 79.226732,
+        "north": 53.801004
+      }
+    },
+    {
+      "field_id": "58107",
+      "ndvi": 0.4774,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58107.png",
+      "bbox": {
+        "west": 79.287933,
+        "south": 53.750417,
+        "east": 79.316854,
+        "north": 53.766583
+      }
+    },
+    {
+      "field_id": "644454",
+      "ndvi": 0.6099,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644454.png",
+      "bbox": {
+        "west": 79.340461,
+        "south": 53.810303,
+        "east": 79.353901,
+        "north": 53.822109
+      }
+    },
+    {
+      "field_id": "58082",
+      "ndvi": 0.5303,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58082.png",
+      "bbox": {
+        "west": 79.284961,
+        "south": 53.809105,
+        "east": 79.300888,
+        "north": 53.824426
+      }
+    },
+    {
+      "field_id": "644452",
+      "ndvi": 0.6042,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644452.png",
+      "bbox": {
+        "west": 79.324652,
+        "south": 53.809237,
+        "east": 79.34205,
+        "north": 53.825407
+      }
+    },
+    {
+      "field_id": "58103",
+      "ndvi": 0.6152,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58103.png",
+      "bbox": {
+        "west": 79.442839,
+        "south": 53.748778,
+        "east": 79.458765,
+        "north": 53.761322
+      }
+    },
+    {
+      "field_id": "644435",
+      "ndvi": 0.6285,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644435.png",
+      "bbox": {
+        "west": 79.3357,
+        "south": 53.783976,
+        "east": 79.354563,
+        "north": 53.79876
+      }
+    },
+    {
+      "field_id": "58102",
+      "ndvi": 0.4542,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58102.png",
+      "bbox": {
+        "west": 79.29294,
+        "south": 53.766283,
+        "east": 79.303109,
+        "north": 53.77362
+      }
+    },
+    {
+      "field_id": "644410",
+      "ndvi": 0.5906,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/644410.png",
+      "bbox": {
+        "west": 79.177505,
+        "south": 53.883842,
+        "east": 79.186665,
+        "north": 53.893402
+      }
+    },
+    {
+      "field_id": "58092",
+      "ndvi": 0.5324,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58092.png",
+      "bbox": {
+        "west": 79.067316,
+        "south": 53.831635,
+        "east": 79.101155,
+        "north": 53.848542
+      }
+    },
+    {
+      "field_id": "58085",
+      "ndvi": 0.6598,
+      "date": "2026-07-20",
+      "source": "Sentinel-2 / Google Earth Engine",
+      "mosaic": "data/ndvi_mosaics/58085.png",
+      "bbox": {
+        "west": 79.305073,
+        "south": 53.788485,
+        "east": 79.321533,
+        "north": 53.804172
+      }
+    }
+  ]
+}

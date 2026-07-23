@@ -1,0 +1,4 @@
+# Опционально: реальный NDVI через Google Earth Engine
+# pip install -r requirements-gee.txt
+earthengine-api>=0.1.400
+Pillow>=10.0.0

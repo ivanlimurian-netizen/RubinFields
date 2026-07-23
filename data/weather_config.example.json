@@ -1,0 +1,10 @@
+{
+  "sokol": {
+    "enabled": true,
+    "login": "your@email.com",
+    "password": "your-sokolmeteo-password",
+    "imei": "861937065189277",
+    "stationName": "РУБИН 1",
+    "userId": "9c291fa6-845f-4526-82a4-3822551c3bca"
+  }
+}

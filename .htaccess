@@ -1,0 +1,14 @@
+# Apache: корректная отдача GeoJSON и кэш статики
+<IfModule mod_mime.c>
+  AddType application/json .geojson
+  AddType application/geo+json .geojson
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|json|geojson)$">
+    Header set Cache-Control "public, max-age=3600"
+  </FilesMatch>
+</IfModule>
+
+# index.html как страница по умолчанию
+DirectoryIndex index.html

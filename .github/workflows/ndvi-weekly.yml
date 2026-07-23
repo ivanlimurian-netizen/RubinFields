@@ -1,0 +1,104 @@
+# Еженедельный пересчёт NDVI (Sentinel-2 / GEE) и выгрузка на хостинг по FTP.
+#
+# Расписание: каждое воскресенье 03:00 UTC (~10:00 Новосибирск зимой / 09:00 летом)
+# Ручной запуск: Actions → NDVI weekly → Run workflow
+#
+# Secrets (Settings → Secrets and variables → Actions):
+#   GEE_CREDENTIALS_JSON  — полный JSON ключа сервисного аккаунта GEE
+#   FTP_HOST              — ftp.kubokilina.ru (или ваш хост)
+#   FTP_USER              — логин FTP
+#   FTP_PASS              — пароль FTP
+#   FTP_REMOTE_DIR        — /RubinFields  (папка сайта на сервере)
+#   FTP_TLS               — опционально: true для FTPS
+#   FTP_PORT              — опционально: 21
+
+name: NDVI weekly
+
+on:
+  schedule:
+    - cron: "0 3 * * 0"
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Скользящее окно в днях (7 = неделя)"
+        required: false
+        default: "7"
+      no_mosaic:
+        description: "Только среднее без PNG (true/false)"
+        required: false
+        default: "false"
+      limit:
+        description: "Лимит полей для теста (0 = все)"
+        required: false
+        default: "0"
+
+concurrency:
+  group: ndvi-weekly
+  cancel-in-progress: false
+
+jobs:
+  compute-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements-gee.txt
+
+      - name: Install dependencies
+        run: pip install -r requirements-gee.txt
+
+      - name: Write GEE credentials
+        env:
+          GEE_CREDENTIALS_JSON: ${{ secrets.GEE_CREDENTIALS_JSON }}
+        run: |
+          if [ -z "$GEE_CREDENTIALS_JSON" ]; then
+            echo "Secret GEE_CREDENTIALS_JSON не задан"
+            exit 1
+          fi
+          printf '%s' "$GEE_CREDENTIALS_JSON" > credentials.json
+          python -c "import json; d=json.load(open('credentials.json')); assert d.get('client_email'); print('GEE SA:', d['client_email'])"
+
+      - name: Compute NDVI
+        env:
+          DAYS: ${{ github.event.inputs.days || '7' }}
+          NO_MOSAIC: ${{ github.event.inputs.no_mosaic || 'false' }}
+          LIMIT: ${{ github.event.inputs.limit || '0' }}
+        run: |
+          EXTRA=""
+          if [ "$NO_MOSAIC" = "true" ]; then EXTRA="$EXTRA --no-mosaic"; fi
+          if [ "$LIMIT" != "0" ] && [ -n "$LIMIT" ]; then EXTRA="$EXTRA --limit $LIMIT"; fi
+          echo "python scripts/calc_ndvi.py --days $DAYS $EXTRA"
+          python scripts/calc_ndvi.py --days "$DAYS" $EXTRA
+
+      - name: Show status
+        run: |
+          python -c "import json; print(json.dumps(json.load(open('data/ndvi_status.json')), ensure_ascii=False, indent=2))"
+          ls -la data/ndvi_mosaics | head -20 || true
+          echo "PNG count: $(ls data/ndvi_mosaics/*.png 2>/dev/null | wc -l)"
+
+      - name: Deploy to hosting (FTP)
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASS: ${{ secrets.FTP_PASS }}
+          FTP_REMOTE_DIR: ${{ secrets.FTP_REMOTE_DIR }}
+          FTP_TLS: ${{ secrets.FTP_TLS }}
+          FTP_PORT: ${{ secrets.FTP_PORT }}
+        run: |
+          if [ -z "$FTP_HOST" ] || [ -z "$FTP_USER" ] || [ -z "$FTP_PASS" ] || [ -z "$FTP_REMOTE_DIR" ]; then
+            echo "Задайте Secrets: FTP_HOST, FTP_USER, FTP_PASS, FTP_REMOTE_DIR"
+            exit 1
+          fi
+          python scripts/deploy_ndvi_ftp.py
+
+      - name: Cleanup credentials
+        if: always()
+        run: rm -f credentials.json

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ГИС полей — ООО «Рубин»</title>
+  <link rel="stylesheet" href="css/style.css?v=20260720_ndvi3">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=1c342a62-114f-4ff3-83a4-d98466da81ff&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+  <script src="https://unpkg.com/shpjs@3.6.3/dist/shp.js"></script>
+  <script src="https://unpkg.com/geotiff@2.0.7/dist-browser/geotiff.js"></script>
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar" id="sidebar">
+      <header class="sidebar__header">
+        <h1>Рубин</h1>
+        <p class="sidebar__subtitle">ГИС полей · Половинное</p>
+      </header>
+
+      <nav class="sidebar__tools">
+        <button type="button" class="tool-btn" id="btn-add-field" title="Рисовать новый полигон">
+          <span class="tool-btn__icon">+</span>
+          Добавить поле
+        </button>
+        <button type="button" class="tool-btn" id="btn-edit-geometry" disabled title="Редактировать вершины выбранного поля">
+          <span class="tool-btn__icon">✎</span>
+          Редактировать контур
+        </button>
+        <button type="button" class="tool-btn tool-btn--danger" id="btn-delete-field" disabled title="Удалить выбранное поле">
+          <span class="tool-btn__icon">×</span>
+          Удалить поле
+        </button>
+        <hr class="sidebar__divider">
+        <input type="file" id="input-shp" accept=".zip,.shp" hidden>
+        <button type="button" class="tool-btn" id="btn-load-shp">Загрузить SHP</button>
+        <button type="button" class="tool-btn" id="btn-load-mapinfo" title="Поля_Рубин и Почвы_Рубин из папки Maps vector">
+          Загрузить MapInfo
+        </button>
+        <hr class="sidebar__divider">
+        <input type="file" id="input-soil-jpg" accept=".jpg,.jpeg,.png,image/*" hidden>
+        <button type="button" class="tool-btn tool-btn--accent" id="btn-soil-map">
+          Распознать почвенную карту (JPG)
+        </button>
+        <button type="button" class="tool-btn" id="btn-soil-map-file">Выбрать JPG…</button>
+        <input type="file" id="input-tif" accept=".tif,.tiff,.geotiff" hidden>
+        <button type="button" class="tool-btn" id="btn-load-tif">Загрузить TIF</button>
+        <hr class="sidebar__divider">
+        <button type="button" class="tool-btn" id="btn-export-json">
+          Экспорт JSON
+        </button>
+        <button type="button" class="tool-btn" id="btn-reset-data">
+          Перезагрузить fields.geojson
+        </button>
+        <hr class="sidebar__divider">
+        <button type="button" class="tool-btn" id="btn-sowing-plan">
+          История и план посевов
+        </button>
+        <section class="sidebar__crops">
+          <h2 class="sidebar__section-title">Посевы <span id="crop-summary-year"></span></h2>
+          <label class="ndvi-label">
+            Сезон (год)
+            <select id="sowing-year" class="ndvi-select"></select>
+          </label>
+          <div class="fields-table-scroll crop-summary-scroll">
+            <table class="fields-table crop-summary-table">
+              <thead>
+                <tr>
+                  <th>Культура</th>
+                  <th>га</th>
+                  <th>полей</th>
+                </tr>
+              </thead>
+              <tbody id="crop-summary-body"></tbody>
+            </table>
+          </div>
+          <p class="crop-summary-total" id="crop-summary-total">Итого: —</p>
+        </section>
+        <hr class="sidebar__divider">
+        <section class="sidebar__ndvi">
+          <h2 class="sidebar__section-title">NDVI</h2>
+          <label class="ndvi-label">
+            Период
+            <select id="ndvi-period" class="ndvi-select">
+              <option value="last_month" selected>Последний месяц</option>
+              <option value="last_year">Последний год</option>
+              <option value="custom">Выбрать месяц…</option>
+            </select>
+          </label>
+          <input type="month" id="ndvi-custom-month" class="ndvi-select" hidden>
+          <button type="button" class="tool-btn tool-btn--accent" id="btn-refresh-ndvi">
+            Обновить NDVI
+          </button>
+          <p class="ndvi-muted ndvi-hint">Среднее + мозаика внутри поля: <code>data/ndvi_latest.json</code> и <code>data/ndvi_mosaics/</code>. На ПК: <code>python scripts\calc_ndvi.py</code></p>
+        </section>
+      </nav>
+
+      <section class="sidebar__table" id="fields-table-wrap" hidden>
+        <h2 class="sidebar__section-title">Таблица полей</h2>
+        <div class="fields-table-scroll">
+          <table class="fields-table" id="fields-table">
+            <thead>
+              <tr>
+                <th>Поле</th>
+                <th>га</th>
+                <th>Культура</th>
+                <th>Почва JPG</th>
+                <th>NDVI</th>
+              </tr>
+            </thead>
+            <tbody id="fields-table-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="sidebar__layers" id="sidebar-layers">
+        <h2 class="sidebar__section-title">Слои карты</h2>
+        <p class="layers-hint">Как в TrueFields: границы полей — основа, аналитика включается отдельно.</p>
+        <div id="layers-panel" class="layers-panel"></div>
+      </section>
+
+      <section class="sidebar__overlay" id="sidebar-overlay">
+        <h2 class="sidebar__section-title">Overlay анализ</h2>
+        <p class="layers-hint">Окрасить базовые поля по атрибутам загруженного слоя (SHP/MapInfo).</p>
+        <label class="ndvi-label">
+          Слой
+          <select id="overlay-layer" class="ndvi-select"></select>
+        </label>
+        <label class="ndvi-label">
+          Поле (атрибут)
+          <select id="overlay-attr" class="ndvi-select"></select>
+        </label>
+        <div class="overlay-actions">
+          <button type="button" class="tool-btn tool-btn--accent" id="btn-overlay-apply">Показать окрас</button>
+          <button type="button" class="tool-btn" id="btn-overlay-reset">Сбросить</button>
+        </div>
+      </section>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <form class="search-form" id="search-form">
+          <input type="search" id="search-input" placeholder="Поиск адреса (геокодер)…" autocomplete="off">
+          <button type="submit">Найти</button>
+        </form>
+
+      </header>
+
+      <div class="map-wrap">
+        <div id="map"></div>
+        <div class="draw-hint" id="draw-hint" hidden>
+          Кликайте по карте для вершин полигона. <button type="button" id="btn-finish-draw">Завершить</button>
+          <button type="button" id="btn-cancel-draw">Отмена</button>
+        </div>
+      </div>
+
+      <footer class="bottom-legend" id="bottom-legend"></footer>
+    </main>
+
+    <aside class="infopanel" id="infopanel" hidden>
+      <button type="button" class="infopanel__close" id="btn-close-panel" aria-label="Закрыть">×</button>
+      <div id="infopanel-content"></div>
+    </aside>
+  </div>
+
+  <div id="toast-container" aria-live="polite"></div>
+
+  <!-- История и план посевов по годам -->
+  <dialog id="sowing-plan-dialog" class="sowing-plan-dialog">
+    <header class="dialog-header">
+      <h3>История и план посевов</h3>
+      <span class="sowing-badge badge--current" id="sowing-plan-badge">текущий сезон</span>
+    </header>
+    <div class="sowing-plan-toolbar">
+      <label>
+        Год
+        <select id="sowing-plan-year" class="ndvi-select"></select>
+      </label>
+      <label class="sowing-add-year">
+        Добавить год
+        <input type="number" id="sowing-new-year" min="1990" max="2100" step="1" class="ndvi-select">
+      </label>
+      <button type="button" class="tool-btn" id="btn-add-sowing-year">+</button>
+    </div>
+    <p class="sowing-plan-hint">
+      Прошлые годы — <strong>история</strong>, текущий — <strong>сезон</strong>, будущие — <strong>план</strong>.
+      Изменения сохраняются автоматически.
+    </p>
+    <div class="sowing-plan-scroll">
+      <table class="fields-table sowing-plan-table">
+        <thead>
+          <tr>
+            <th>Поле</th>
+            <th>га</th>
+            <th>Культура</th>
+          </tr>
+        </thead>
+        <tbody id="sowing-plan-body"></tbody>
+      </table>
+    </div>
+    <footer class="sowing-plan-footer" id="sowing-plan-summary"></footer>
+    <menu class="dialog-actions">
+      <button type="button" id="sowing-plan-close">Закрыть</button>
+    </menu>
+  </dialog>
+
+  <!-- Распознавание почвенной карты JPG -->
+  <dialog id="soil-map-dialog" class="soil-map-dialog">
+    <header class="dialog-header">
+      <h3>Почвенная карта (JPG)</h3>
+    </header>
+    <p class="sowing-plan-hint">
+      Привязка: углы изображения в WGS84. По умолчанию — по границам всех полей.
+      Клик по превью — пипетка (добавить цвет в легенду).
+    </p>
+    <div class="soil-map-preview-wrap">
+      <canvas id="soil-map-preview" class="soil-map-preview" title="Клик — пипетка для легенды"></canvas>
+    </div>
+    <div class="soil-georef-grid">
+      <label>Запад (lon)<input type="number" id="georef-west" step="any" class="ndvi-select"></label>
+      <label>Восток (lon)<input type="number" id="georef-east" step="any" class="ndvi-select"></label>
+      <label>Юг (lat)<input type="number" id="georef-south" step="any" class="ndvi-select"></label>
+      <label>Север (lat)<input type="number" id="georef-north" step="any" class="ndvi-select"></label>
+    </div>
+    <button type="button" class="tool-btn" id="btn-soil-map-auto-bounds">Привязать по полям</button>
+    <section class="soil-legend-section">
+      <h4>Легенда (цвет → тип почвы)</h4>
+      <div id="soil-legend-list" class="soil-legend-list"></div>
+      <p class="ndvi-muted">Настройка: data/soil_map_legend.json</p>
+    </section>
+    <menu class="dialog-actions">
+      <button type="button" id="btn-soil-map-close">Отмена</button>
+      <button type="button" class="tool-btn tool-btn--accent" id="btn-soil-map-run">Распознать почвы</button>
+    </menu>
+  </dialog>
+
+  <!-- Модальное окно атрибутов -->
+  <dialog id="attr-dialog">
+    <form method="dialog" id="attr-form">
+      <h3 id="attr-dialog-title">Атрибуты поля</h3>
+      <label>
+        Название
+        <input type="text" name="name" required maxlength="120">
+      </label>
+      <label>
+        Гранулометрический состав
+        <select name="texture" required>
+          <option value="sandy">Песчаный</option>
+          <option value="loamy">Супесчаный</option>
+          <option value="clay_loam">Суглинок</option>
+          <option value="clay">Глина</option>
+        </select>
+      </label>
+      <label>
+        Запас гумуса (%)
+        <select name="humus" required>
+          <option value="low">Низкий (&lt;2%)</option>
+          <option value="medium">Средний (2–4%)</option>
+          <option value="high">Высокий (&gt;4%)</option>
+        </select>
+      </label>
+      <label>
+        Культура (посев <span id="attr-crop-year"></span>)
+        <select name="crop" id="attr-crop"></select>
+      </label>
+      <label>
+        Рейтинг (1–5)
+        <select name="rating" required>
+          <option value="1">1 ★</option>
+          <option value="2">2 ★★</option>
+          <option value="3">3 ★★★</option>
+          <option value="4">4 ★★★★</option>
+          <option value="5">5 ★★★★★</option>
+        </select>
+      </label>
+      <menu class="dialog-actions">
+        <button type="button" value="cancel" id="attr-cancel">Отмена</button>
+        <button type="submit" value="default">Сохранить</button>
+      </menu>
+    </form>
+  </dialog>
+
+  <script>window.RUBIN_APP_BASE = window.RUBIN_APP_BASE || (function(){var p=location.pathname.replace(/\/index\.html?$/i,'').replace(/\/$/,'');return p&&p!=='/'?p:'';})();</script>
+  <script src="js/utils.js?v=20260720_ndvi3"></script>
+  <script src="js/weather.js?v=20260720_ndvi3"></script>
+  <script src="js/styling.js?v=20260720_ndvi3"></script>
+  <script src="js/gee.js?v=20260720_ndvi3"></script>
+  <script src="js/crops.js?v=20260720_ndvi3"></script>
+  <script src="js/ndvi.js?v=20260720_ndvi3"></script>
+  <script src="js/layers.js?v=20260720_ndvi3"></script>
+  <script src="js/map.js?v=20260720_ndvi3"></script>
+  <script src="js/soilMapRecognizer.js?v=20260720_ndvi3"></script>
+  <script src="js/mapinfoLayers.js?v=20260720_ndvi3"></script>
+  <script src="js/overlayStyling.js?v=20260720_ndvi3"></script>
+  <script src="js/fields.js?v=20260720_ndvi3"></script>
+  <script src="js/fileLoader.js?v=20260720_ndvi3"></script>
+  <script src="js/app.js?v=20260720_ndvi3"></script>
+</body>
+</html>

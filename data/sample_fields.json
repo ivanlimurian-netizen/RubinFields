@@ -1,0 +1,71 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "field-1",
+      "properties": {
+        "name": "Поле «Восточное»",
+        "texture": "loamy",
+        "humus": "medium",
+        "rating": 4
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [79.472, 53.988],
+            [79.485, 53.988],
+            [79.485, 53.978],
+            [79.472, 53.978],
+            [79.472, 53.988]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "field-2",
+      "properties": {
+        "name": "Поле «Западное»",
+        "texture": "sandy",
+        "humus": "low",
+        "rating": 2
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [79.458, 53.992],
+            [79.470, 53.992],
+            [79.470, 53.982],
+            [79.458, 53.982],
+            [79.458, 53.992]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "field-3",
+      "properties": {
+        "name": "Поле «Южное»",
+        "texture": "clay_loam",
+        "humus": "high",
+        "rating": 5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [79.478, 53.975],
+            [79.492, 53.975],
+            [79.492, 53.965],
+            [79.478, 53.965],
+            [79.478, 53.975]
+          ]
+        ]
+      }
+    }
+  ]
+}
