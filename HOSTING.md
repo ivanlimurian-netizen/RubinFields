@@ -1,4 +1,4 @@
-# Размещение на https://kubokilina.ru/RubinFields/
+# Размещение на https://kubokilina.ru
 
 ## Что загрузить на хостинг
 
