@@ -105,12 +105,10 @@ https://github.com/ivanlimurian-netizen/RubinFields
 
 ## Проверка после загрузки
 
-1. https://kubokilina.ru/RubinFields/ — карта и поля
-2. https://kubokilina.ru/RubinFields/fields.geojson — должен открыться JSON
-3. https://kubokilina.ru/RubinFields/data/mapinfo_polya.geojson — после экспорта на ПК
-4. В ГИС: **Загрузить MapInfo** → без ошибки 404
-5. Панель **Слои карты** — включение NDVI, культур, почв
-6. Клик по полю → погода Сокол-М (или Open-Meteo)
+1. https://kubokilina.ru — карта и поля
+3. В ГИС: **Загрузить MapInfo** → без ошибки 404
+4. Панель **Слои карты** — включение NDVI, культур, почв
+5. Клик по полю → погода Сокол-М (или Open-Meteo)
 
 ## Если сайт в другой подпапке
 
