@@ -1,6 +1,6 @@
 # Загрузка папки rubin-gis на хостинг
 
-Сайт: **https://kubokilina.ru/RubinFields/**
+Сайт: **https://kubokilina.ru
 
 ## Что загружать
 
